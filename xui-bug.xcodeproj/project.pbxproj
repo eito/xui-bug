@@ -11,6 +11,7 @@
 		4BA4501B296CCBB90095FD52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA4501A296CCBB90095FD52 /* ContentView.swift */; };
 		4BA4501D296CCBBA0095FD52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA4501C296CCBBA0095FD52 /* Assets.xcassets */; };
 		4BA45020296CCBBA0095FD52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA4501F296CCBBA0095FD52 /* Preview Assets.xcassets */; };
+		4BA45028296CCBEA0095FD52 /* XUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4BA45027296CCBEA0095FD52 /* XUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA45028296CCBEA0095FD52 /* XUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "xui-bug";
+			packageProductDependencies = (
+				4BA45027296CCBEA0095FD52 /* XUI */,
+			);
 			productName = "xui-bug";
 			productReference = 4BA45015296CCBB90095FD52 /* xui-bug.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 4BA4500C296CCBB90095FD52;
+			packageReferences = (
+				4BA45026296CCBEA0095FD52 /* XCRemoteSwiftPackageReference "XUI" */,
+			);
 			productRefGroup = 4BA45016296CCBB90095FD52 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4BA45026296CCBEA0095FD52 /* XCRemoteSwiftPackageReference "XUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quickbirdstudios/XUI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4BA45027296CCBEA0095FD52 /* XUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BA45026296CCBEA0095FD52 /* XCRemoteSwiftPackageReference "XUI" */;
+			productName = XUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BA4500D296CCBB90095FD52 /* Project object */;
 }

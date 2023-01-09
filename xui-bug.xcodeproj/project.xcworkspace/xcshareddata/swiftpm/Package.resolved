@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "xui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/quickbirdstudios/XUI.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "12011ac136681778fa7953f88fe5caa7425bda3e"
+      }
+    }
+  ],
+  "version" : 2
+}
